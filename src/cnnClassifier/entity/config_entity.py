@@ -19,3 +19,8 @@ class PrepareBaseModelConfig:
     params_weight: str
     params_classes: int
     
+@dataclass
+class PrepareCallbacksConfig:
+    root_dir: Path
+    tensorboard_root_log_dir: Path
+    checkpoint_model_filepath: Path
